@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		764245E425BB33D500EED4DE /* StonksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764245E325BB33D500EED4DE /* StonksAppApp.swift */; };
-		764245E625BB33D500EED4DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764245E525BB33D500EED4DE /* ContentView.swift */; };
 		764245E825BB33D600EED4DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764245E725BB33D600EED4DE /* Assets.xcassets */; };
 		764245EB25BB33D600EED4DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764245EA25BB33D600EED4DE /* Preview Assets.xcassets */; };
 		764245F625BB33D600EED4DE /* StonksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764245F525BB33D600EED4DE /* StonksAppTests.swift */; };
 		7642460125BB33D600EED4DE /* StonksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642460025BB33D600EED4DE /* StonksAppUITests.swift */; };
+		76FDC91F25CD494900E1FC8E /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FDC91E25CD494900E1FC8E /* Icons.xcassets */; };
+		76FDC99325CDB2AB00E1FC8E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDC99225CDB2AB00E1FC8E /* AppView.swift */; };
+		76FDC99A25CDB3D900E1FC8E /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDC99925CDB3D900E1FC8E /* LibraryView.swift */; };
+		76FDC9AB25CDB48900E1FC8E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDC9AA25CDB48900E1FC8E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,6 @@
 /* Begin PBXFileReference section */
 		764245E025BB33D500EED4DE /* StonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764245E325BB33D500EED4DE /* StonksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksAppApp.swift; sourceTree = "<group>"; };
-		764245E525BB33D500EED4DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		764245E725BB33D600EED4DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764245EA25BB33D600EED4DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		764245EC25BB33D600EED4DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +47,10 @@
 		764245FC25BB33D600EED4DE /* StonksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StonksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7642460025BB33D600EED4DE /* StonksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksAppUITests.swift; sourceTree = "<group>"; };
 		7642460225BB33D600EED4DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FDC91E25CD494900E1FC8E /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		76FDC99225CDB2AB00E1FC8E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		76FDC99925CDB3D900E1FC8E /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		76FDC9AA25CDB48900E1FC8E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +101,12 @@
 		764245E225BB33D500EED4DE /* StonksApp */ = {
 			isa = PBXGroup;
 			children = (
+				76FDC99225CDB2AB00E1FC8E /* AppView.swift */,
+				76FDC99825CDB3CB00E1FC8E /* library */,
+				76FDC99725CDB3C000E1FC8E /* home */,
 				764245E325BB33D500EED4DE /* StonksAppApp.swift */,
-				764245E525BB33D500EED4DE /* ContentView.swift */,
 				764245E725BB33D600EED4DE /* Assets.xcassets */,
+				76FDC91E25CD494900E1FC8E /* Icons.xcassets */,
 				764245EC25BB33D600EED4DE /* Info.plist */,
 				764245E925BB33D600EED4DE /* Preview Content */,
 			);
@@ -128,6 +137,22 @@
 				7642460225BB33D600EED4DE /* Info.plist */,
 			);
 			path = StonksAppUITests;
+			sourceTree = "<group>";
+		};
+		76FDC99725CDB3C000E1FC8E /* home */ = {
+			isa = PBXGroup;
+			children = (
+				76FDC9AA25CDB48900E1FC8E /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		76FDC99825CDB3CB00E1FC8E /* library */ = {
+			isa = PBXGroup;
+			children = (
+				76FDC99925CDB3D900E1FC8E /* LibraryView.swift */,
+			);
+			path = library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				764245EB25BB33D600EED4DE /* Preview Assets.xcassets in Resources */,
+				76FDC91F25CD494900E1FC8E /* Icons.xcassets in Resources */,
 				764245E825BB33D600EED4DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764245E625BB33D500EED4DE /* ContentView.swift in Sources */,
+				76FDC99A25CDB3D900E1FC8E /* LibraryView.swift in Sources */,
+				76FDC9AB25CDB48900E1FC8E /* HomeView.swift in Sources */,
 				764245E425BB33D500EED4DE /* StonksAppApp.swift in Sources */,
+				76FDC99325CDB2AB00E1FC8E /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
