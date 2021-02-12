@@ -14,15 +14,20 @@ struct AppView : View{
             TabView{
                 LibraryView()
                     .tabItem{
-                        Image(systemName: "home")
+                        Image(systemName: "book.fill")
                         Text("Library")
                     }
              HomeView()
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .tabItem {
-                    Image(systemName: "home")
+                    Image(systemName: "house.fill")
                     Text("Home")
                 }
-            }.toolbar(content: {
+            }.onAppear(perform: {
+                UITabBar.appearance().isTranslucent = false
+                UITabBar.appearance().barTintColor = .white
+            }).accentColor(Color("red500"))
+            .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading, content: {
                         HStack(alignment: .center, spacing: 12, content: {
                             Image("logo")

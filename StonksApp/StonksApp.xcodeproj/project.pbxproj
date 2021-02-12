@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7637DEA125D6E4530093D06F /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637DEA025D6E4530093D06F /* PortfolioView.swift */; };
+		7637DEA625D6E4A60093D06F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637DEA525D6E4A60093D06F /* HomeViewModel.swift */; };
+		7637DEAD25D6E5200093D06F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637DEAC25D6E5200093D06F /* Card.swift */; };
 		764245E425BB33D500EED4DE /* StonksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764245E325BB33D500EED4DE /* StonksAppApp.swift */; };
 		764245E825BB33D600EED4DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764245E725BB33D600EED4DE /* Assets.xcassets */; };
 		764245EB25BB33D600EED4DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764245EA25BB33D600EED4DE /* Preview Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7637DEA025D6E4530093D06F /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		7637DEA525D6E4A60093D06F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7637DEAC25D6E5200093D06F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		764245E025BB33D500EED4DE /* StonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764245E325BB33D500EED4DE /* StonksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksAppApp.swift; sourceTree = "<group>"; };
 		764245E725BB33D600EED4DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +84,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7637DE9F25D6E4430093D06F /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7637DEA025D6E4530093D06F /* PortfolioView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		7637DEAA25D6E5060093D06F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7637DEAB25D6E50C0093D06F /* viewcomponents */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		7637DEAB25D6E50C0093D06F /* viewcomponents */ = {
+			isa = PBXGroup;
+			children = (
+				7637DEAC25D6E5200093D06F /* Card.swift */,
+			);
+			path = viewcomponents;
+			sourceTree = "<group>";
+		};
 		764245D725BB33D500EED4DE = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +131,7 @@
 		764245E225BB33D500EED4DE /* StonksApp */ = {
 			isa = PBXGroup;
 			children = (
+				7637DEAA25D6E5060093D06F /* utils */,
 				76FDC99225CDB2AB00E1FC8E /* AppView.swift */,
 				76FDC99825CDB3CB00E1FC8E /* library */,
 				76FDC99725CDB3C000E1FC8E /* home */,
@@ -142,7 +173,9 @@
 		76FDC99725CDB3C000E1FC8E /* home */ = {
 			isa = PBXGroup;
 			children = (
+				7637DE9F25D6E4430093D06F /* ui */,
 				76FDC9AA25CDB48900E1FC8E /* HomeView.swift */,
+				7637DEA525D6E4A60093D06F /* HomeViewModel.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -286,6 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FDC99A25CDB3D900E1FC8E /* LibraryView.swift in Sources */,
+				7637DEA625D6E4A60093D06F /* HomeViewModel.swift in Sources */,
+				7637DEAD25D6E5200093D06F /* Card.swift in Sources */,
+				7637DEA125D6E4530093D06F /* PortfolioView.swift in Sources */,
 				76FDC9AB25CDB48900E1FC8E /* HomeView.swift in Sources */,
 				764245E425BB33D500EED4DE /* StonksAppApp.swift in Sources */,
 				76FDC99325CDB2AB00E1FC8E /* AppView.swift in Sources */,
