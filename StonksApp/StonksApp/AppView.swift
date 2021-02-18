@@ -12,17 +12,17 @@ struct AppView : View{
     var body: some View{
         NavigationView{
             TabView{
+                HomeView()
+                   .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                   .tabItem {
+                       Image(systemName: "house.fill")
+                       Text("Home")
+                   }
                 LibraryView()
                     .tabItem{
                         Image(systemName: "book.fill")
                         Text("Library")
                     }
-             HomeView()
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
             }.onAppear(perform: {
                 UITabBar.appearance().isTranslucent = false
                 UITabBar.appearance().barTintColor = .white
@@ -39,7 +39,7 @@ struct AppView : View{
                         })
                     })
                 })
-        }
+        }.background(Theme.Colors.background)
     }
 }
 

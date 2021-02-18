@@ -16,6 +16,7 @@ struct PortfolioView: View {
         VStack(alignment: .leading, spacing: 0, content: {
             Text("My Portfolio")
                 .font(.title2)
+                .foregroundColor(Theme.Colors.text)
                 .bold()
                 .padding(8)
             
@@ -25,13 +26,13 @@ struct PortfolioView: View {
                     HStack {
                         Text("16.240€")
                             .font(Font.system(size: 40))
+                            .foregroundColor(Theme.Colors.text)
                             .bold()
                         Spacer()
                         Image(systemName: "eye.slash.fill")
                             .resizable()
-                            .frame(width: 28, height: 20)
+                            .frame(width: 24, height: 16)
                             .padding(.trailing, 6)
-                        //pick a Black più morbido
                     }
                         last24Hours()
                     last7Days()
@@ -47,6 +48,8 @@ struct PortfolioView: View {
             .bold()
         +
         Text(" (3.195€)")
+            .foregroundColor(Theme.Colors.text)
+            .font(.subheadline)
         +
         Text(" last 24 hours")
             .font(.footnote)
@@ -59,9 +62,11 @@ struct PortfolioView: View {
             .bold()
         +
         Text(" (-847€)")
+            .foregroundColor(Theme.Colors.text)
             .font(.subheadline)
         +
         Text(" last 7 days")
+            .foregroundColor(Theme.Colors.text)
             .font(.footnote)
             .fontWeight(.light)
     }

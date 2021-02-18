@@ -10,6 +10,9 @@
 		7637DEA125D6E4530093D06F /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637DEA025D6E4530093D06F /* PortfolioView.swift */; };
 		7637DEA625D6E4A60093D06F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637DEA525D6E4A60093D06F /* HomeViewModel.swift */; };
 		7637DEAD25D6E5200093D06F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637DEAC25D6E5200093D06F /* Card.swift */; };
+		764008A725D9A444008AADA0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764008A625D9A444008AADA0 /* Theme.swift */; };
+		764008AC25D9A7CF008AADA0 /* WatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764008AB25D9A7CF008AADA0 /* WatchListView.swift */; };
+		764008B125D9A93E008AADA0 /* WatchlistStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764008B025D9A93E008AADA0 /* WatchlistStock.swift */; };
 		764245E425BB33D500EED4DE /* StonksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764245E325BB33D500EED4DE /* StonksAppApp.swift */; };
 		764245E825BB33D600EED4DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764245E725BB33D600EED4DE /* Assets.xcassets */; };
 		764245EB25BB33D600EED4DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764245EA25BB33D600EED4DE /* Preview Assets.xcassets */; };
@@ -42,6 +45,9 @@
 		7637DEA025D6E4530093D06F /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		7637DEA525D6E4A60093D06F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7637DEAC25D6E5200093D06F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		764008A625D9A444008AADA0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		764008AB25D9A7CF008AADA0 /* WatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListView.swift; sourceTree = "<group>"; };
+		764008B025D9A93E008AADA0 /* WatchlistStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistStock.swift; sourceTree = "<group>"; };
 		764245E025BB33D500EED4DE /* StonksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StonksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764245E325BB33D500EED4DE /* StonksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksAppApp.swift; sourceTree = "<group>"; };
 		764245E725BB33D600EED4DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +93,9 @@
 		7637DE9F25D6E4430093D06F /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				764008AB25D9A7CF008AADA0 /* WatchListView.swift */,
 				7637DEA025D6E4530093D06F /* PortfolioView.swift */,
+				764008B025D9A93E008AADA0 /* WatchlistStock.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				7637DEAB25D6E50C0093D06F /* viewcomponents */,
+				764008A625D9A444008AADA0 /* Theme.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -319,7 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FDC99A25CDB3D900E1FC8E /* LibraryView.swift in Sources */,
+				764008AC25D9A7CF008AADA0 /* WatchListView.swift in Sources */,
+				764008A725D9A444008AADA0 /* Theme.swift in Sources */,
 				7637DEA625D6E4A60093D06F /* HomeViewModel.swift in Sources */,
+				764008B125D9A93E008AADA0 /* WatchlistStock.swift in Sources */,
 				7637DEAD25D6E5200093D06F /* Card.swift in Sources */,
 				7637DEA125D6E4530093D06F /* PortfolioView.swift in Sources */,
 				76FDC9AB25CDB48900E1FC8E /* HomeView.swift in Sources */,
